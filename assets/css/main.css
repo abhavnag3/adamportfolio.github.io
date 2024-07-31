@@ -236,26 +236,45 @@ input, select, textarea {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	float: center;
     gap: 20px;
+	place-content: center;
     justify-items: center; /* Center items horizontally */
+	justify-content: center;
     margin-top: 20px;
 }
-
+.skill-text {
+    display: flex;
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center items horizontally */
+}
 .skill {
     width: 100px;
     height: 100px;
     border: 2px solid rgba(255, 255, 255, 0.5); /* Thin circular border with slight transparency */
     border-radius: 100%; /* Make it circular */
+	float: center;
     display: flex;
     align-items: center;
+    justify-items: center; /* Center items horizontally */
+	justify-content: center;
+    position: relative; /* For modal positioning */
+	/*
+	width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    cursor: pointer; 
+    position: relative;
+	*/
 }
 
 .skill-icon {
     width: 90%;
     height: 90%;
     object-fit: contain; /* Ensure the icon fits within the circular border */
-	border-radius: 100%;
+    border-radius: 100%;
 }
 
 #skills p {
@@ -263,7 +282,29 @@ input, select, textarea {
     margin: 0 auto 2rem auto;
 }
 
+
+
+.skill {
+    cursor: pointer; /* This changes the cursor to a click icon */
+}
+
+.skill:hover {
+    /* Add any hover effects you want here, such as changing the background color */
+    background-color: rgba(255, 255, 255, 0.075); /* Example hover effect */
+}
+
+.skill:active {
+    background-color: rgba(255, 255, 255, 0.175);
+}
+.skill-name {
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center the text */
+}
 /* skills styles */
+
+
+
 
 /* Type */
 
