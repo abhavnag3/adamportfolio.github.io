@@ -124,7 +124,23 @@ input, select, textarea {
 
 /* about me styles */
 
-#intro .major2 {
+.major2 {
+	/*border-bottom: solid 1px #ffffff;
+	width: -moz-max-content;
+	width: -webkit-max-content;
+	width: -ms-max-content;
+	width: max-content;
+	padding-bottom: 0.5rem;
+	margin: 0 0 2rem 0;
+    text-align: center; 
+    margin-bottom: 20px; */
+	border-bottom: solid 1px #ffffff;
+    width: max-content; /* This will automatically adjust to the content width */
+    padding-bottom: 0.5rem;
+    margin: 0 auto 2rem auto; /* Center the element horizontally and add bottom margin */
+    text-align: center;
+}
+.rc {
 	/*border-bottom: solid 1px #ffffff;
 	width: -moz-max-content;
 	width: -webkit-max-content;
@@ -159,7 +175,7 @@ input, select, textarea {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 10px;
     color: white; /* Ensure text is readable */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+    /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/ /* Add text shadow for better readability */
     text-align: center; /* Center-align text inside the shape */
     display: flex;
     flex-direction: column;
@@ -180,7 +196,7 @@ input, select, textarea {
     
     margin: 1px;
     color: white; /* Ensure text is readable */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+   /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
     text-align: center; /* Center-align text inside the shape */
     display: flex;
     flex-direction: column;
@@ -225,7 +241,7 @@ input, select, textarea {
 /* about me styles */
 /* =========================================== */
 /* skills styles */
-#skills .major2 {
+.major2 {
     border-bottom: solid 1px #ffffff;
     width: max-content; /* This will automatically adjust to the content width */
     padding-bottom: 0.5rem;
