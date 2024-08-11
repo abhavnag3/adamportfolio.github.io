@@ -280,6 +280,7 @@ input, select, textarea {
 }
 
 .skills-grid {
+	margin-bottom: 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 	float: center;
@@ -349,6 +350,56 @@ input, select, textarea {
 }
 /* skills styles */
 
+
+/*projects section*/
+
+.projects-grid {
+	/*
+    display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px;
+	*/
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	
+    grid-gap: 10px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+	
+	
+}
+
+.project {
+	height: fit-content;
+	flex-direction: row;
+	justify-content: center;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid white;
+	
+    min-width: auto; /* Ensures a minimum width for each project */
+    max-width: auto; /* Sets a maximum width for each project */
+    flex: 1 1 auto; /* Allows the items to grow and shrink as needed */
+}
+
+.projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*height: 100vh; /* Ensures the section takes up the full height of the viewport */
+}
+
+/*projects section*/
 
 
 
